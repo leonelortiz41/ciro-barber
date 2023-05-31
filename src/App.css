@@ -10,10 +10,24 @@ body {
 li {
     list-style: none;
 }
-
-.Header-fixed {
+.Header {
     position: fixed;
     z-index: 100;
+    width: 100%;
+    top: 0;
+    transition: 1s;
+    background-attachment: local;
+    background-image: url("./assets/header1.svg");
+    background-size: cover;
+}
+.Header-fixed {
+    background-image: url("./assets/header1.svg");
+    background-attachment: fixed;
+    position: fixed;
+    z-index: 100;
+    opacity: 78%;
+    transition: .6s;
+    filter: hue-rotate(-0.8turn);
     width: 100%;
     top: 0;
 
@@ -35,21 +49,18 @@ li {
 .card-1 {
     padding: 3px;
     border: none;
-    border-radius: 0 0 33px ;
+    border-radius: 0 0 33px;
     box-shadow: 0 0 6px #000;
 }
 
 .bg-navbar {
-    background-image: url("./assets/header1.svg");
-    background-attachment: fixed;
-    background-size: contain;
     color: #000;
     /* border-bottom: #000 solid 4px; */
     box-shadow: 0 5px 4px #000;
-    border-radius: 0 0 45px ;
+    border-radius: 0 0 45px;
 }
 
-.bg-navbar .btn{
+.bg-navbar .btn {
     font-size: 19px;
     color: #111;
     background: #aaaaaa80;
@@ -61,9 +72,10 @@ li {
     vertical-align: middle;
     text-decoration: none;
     margin: 2px;
-    --clippy:polygon(0 0, 0 0, 0 100%, 0% 100%);
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
-.bg-navbar .btn::after{
+
+.bg-navbar .btn::after {
     display: block;
     background: #fff;
     height: 4px;
@@ -73,14 +85,16 @@ li {
     transition: clip-path .5s cubic-bezier(1, 0.8, 0.21, 0.8);
 }
 
-.bg-navbar .btn:hover{
-    --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+.bg-navbar .btn:hover {
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     background: #00000080;
     color: #fff;
 }
 
 
-
+#Home {
+    margin-top: 90px;
+}
 
 ::-webkit-scrollbar {
     background: #111;
@@ -106,65 +120,72 @@ li {
     background: #78f8a9;
 }
 
-.btn:focus,.btn-close:focus {
+.btn:focus,
+.btn-close:focus {
     outline: none !important;
     outline-width: 0 !important;
     box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
 }
-.modal-content input{
+
+.modal-content input {
     outline: none;
     background: #fff;
     padding: 3px;
-    border:none;
+    border: none;
     border-radius: 0 0 10px 0;
     margin-block: 2px;
 }
-.modal-content .btn:active{
+
+.modal-content .btn:active {
     transition: .1s;
     color: #fff;
     background-color: #000;
 }
 
-.wp{
+.wp {
     position: fixed;
     width: 55px;
     bottom: 3%;
     right: 2%;
-    filter: drop-shadow(2px  3px 2px #426d00);
+    filter: drop-shadow(2px 3px 2px #426d00);
 }
 
-.Services{
-    animation: animation-reverse  0.6s;
+.Services {
+    animation: animation-reverse 0.6s;
     animation-fill-mode: forwards;
     /* visibility: hidden; */
 }
 
-.animation{
+.animation {
     transition: 1s;
     animation: animation 1s;
     visibility: visible;
 }
-@keyframes animation{
-    0%{
+
+@keyframes animation {
+    0% {
         position: relative;
         bottom: 50px;
         opacity: 0%;
     }
-    100%{
+
+    100% {
         position: relative;
         bottom: 0px;
         opacity: 100%;
     }
 }
-@keyframes animation-reverse{
-    0%{
+
+@keyframes animation-reverse {
+    0% {
         position: relative;
         bottom: 0px;
         opacity: 100%;
     }
-    100%{
+
+    100% {
         position: relative;
         bottom: 50px;
         opacity: 0%;

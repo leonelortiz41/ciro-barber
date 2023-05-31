@@ -21,7 +21,7 @@ export function Services() {
   const service=useRef(null);
   let [mostrar,setMostrar]=useState(false)
   document.addEventListener("scroll", () => {
-    if(service.current.getBoundingClientRect().top<=window.innerHeight/1.7)
+    if(service.current.getBoundingClientRect().top<window.innerHeight/1.7)
     setMostrar(true)
     else
     setMostrar(false)
