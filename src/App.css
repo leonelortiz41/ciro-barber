@@ -1,0 +1,172 @@
+body {
+    user-select: none;
+}
+
+.logo2 {
+    filter: drop-shadow(6px 6px 2px rgb(0, 0, 0));
+}
+
+
+li {
+    list-style: none;
+}
+
+.Header-fixed {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    top: 0;
+
+}
+
+@media (width < 800px) {
+    .logo2 {
+        width: 100%;
+    }
+}
+
+@media (width >=800px) {
+    .logo2 {
+        width: 50%;
+    }
+}
+
+
+.card-1 {
+    padding: 3px;
+    border: none;
+    border-radius: 0 0 33px ;
+    box-shadow: 0 0 6px #000;
+}
+
+.bg-navbar {
+    background-image: url("./assets/header1.svg");
+    background-attachment: fixed;
+    background-size: contain;
+    color: #000;
+    /* border-bottom: #000 solid 4px; */
+    box-shadow: 0 5px 4px #000;
+    border-radius: 0 0 45px ;
+}
+
+.bg-navbar .btn{
+    font-size: 19px;
+    color: #111;
+    background: #aaaaaa80;
+    backdrop-filter: blur(3px);
+    border-radius: 0 0 17px;
+    margin-bottom: auto;
+    padding: 3px;
+    font-style: oblique;
+    vertical-align: middle;
+    text-decoration: none;
+    margin: 2px;
+    --clippy:polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+.bg-navbar .btn::after{
+    display: block;
+    background: #fff;
+    height: 4px;
+    width: auto;
+    content: "";
+    clip-path: var(--clippy);
+    transition: clip-path .5s cubic-bezier(1, 0.8, 0.21, 0.8);
+}
+
+.bg-navbar .btn:hover{
+    --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background: #00000080;
+    color: #fff;
+}
+
+
+
+
+::-webkit-scrollbar {
+    background: #111;
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #426d00;
+    border: #000 solid 2px;
+}
+
+.modal-content {
+    background-color: #ffffff55;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 5px #111;
+}
+
+.btn-cerrar {
+    background: #ffe;
+}
+
+.btn-reservar {
+    background: #78f8a9;
+}
+
+.btn:focus,.btn-close:focus {
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.modal-content input{
+    outline: none;
+    background: #fff;
+    padding: 3px;
+    border:none;
+    border-radius: 0 0 10px 0;
+    margin-block: 2px;
+}
+.modal-content .btn:active{
+    transition: .1s;
+    color: #fff;
+    background-color: #000;
+}
+
+.wp{
+    position: fixed;
+    width: 55px;
+    bottom: 3%;
+    right: 2%;
+    filter: drop-shadow(2px  3px 2px #426d00);
+}
+
+.Services{
+    animation: animation-reverse  0.6s;
+    animation-fill-mode: forwards;
+    /* visibility: hidden; */
+}
+
+.animation{
+    transition: 1s;
+    animation: animation 1s;
+    visibility: visible;
+}
+@keyframes animation{
+    0%{
+        position: relative;
+        bottom: 50px;
+        opacity: 0%;
+    }
+    100%{
+        position: relative;
+        bottom: 0px;
+        opacity: 100%;
+    }
+}
+@keyframes animation-reverse{
+    0%{
+        position: relative;
+        bottom: 0px;
+        opacity: 100%;
+    }
+    100%{
+        position: relative;
+        bottom: 50px;
+        opacity: 0%;
+    }
+}
