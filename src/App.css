@@ -2,9 +2,6 @@ body {
     user-select: none;
 }
 
-.logo2 {
-    filter: drop-shadow(6px 6px 2px rgb(0, 0, 0));
-}
 
 
 li {
@@ -17,15 +14,19 @@ li {
     top: 0;
     transition: 1s;
     background-attachment: local;
-    background-image: url("./assets/header1.svg");
+    background-image: 
+    linear-gradient(to right, transparent 1%,#fff 20%,#fff 40%,#014f1c10, #52ff4f55)
+    , url("./assets/header1.svg");
     background-size: cover;
 }
 .Header-fixed {
-    background-image: url("./assets/header1.svg");
-    background-attachment: fixed;
+    background-image: 
+    linear-gradient(to right, transparent 1%,#fff 20%,#fff 40%,#014f1c50, #52ff4f01)
+
+    ,url("./assets/header1.svg");
     position: fixed;
+    background-size: cover;
     z-index: 100;
-    opacity: 78%;
     transition: .6s;
     filter: hue-rotate(-0.8turn);
     width: 100%;
@@ -41,7 +42,7 @@ li {
 
 @media (width >=800px) {
     .logo2 {
-        width: 50%;
+        width: 45%;
     }
 }
 
@@ -62,14 +63,12 @@ li {
 
 .bg-navbar .btn {
     font-size: 19px;
-    color: #111;
+    color: #000;
     background: #aaaaaa80;
     backdrop-filter: blur(3px);
     border-radius: 0 0 17px;
-    margin-bottom: auto;
     padding: 3px;
     font-style: oblique;
-    vertical-align: middle;
     text-decoration: none;
     margin: 2px;
     --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);

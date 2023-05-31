@@ -27,10 +27,10 @@ export function Services() {
     setMostrar(false)
   })
   return (
-    <div id='Services' className={(mostrar==true) ? "animation" : "Services"} ref={service}>
+    <div id='Services' className={((mostrar==true) ? "animation" : "Services")} ref={service}>
       <h2 className='text-center m-auto mt-5'>Servicios</h2>
 
-      <ul className='container-fluid row d-flex justify-content-center '>
+      <ul className='container-fluid row d-flex justify-content-center mx-auto '>
         <li className='card-1 col-sm-3 p-3 m-2'>
           <h3 className='text-center'>Corte de cabello</h3>
           <img src={cejas} className='w-100' />
