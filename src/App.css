@@ -18,11 +18,16 @@ li {
     linear-gradient(to right, transparent 1%,#fff 20%,#fff 40%,#014f1c10, #52ff4f55)
     , url("./assets/header1.svg");
     background-size: cover;
+    color: #000;
+    box-shadow: 0 5px 4px #000;
+    border-radius: 0 0 45px;
 }
 .Header-fixed {
+    color: #000;
+    box-shadow: 0 5px 4px #000;
+    border-radius: 0 0 45px;
     background-image: 
     linear-gradient(to right, transparent 1%,#fff 20%,#fff 40%,#014f1c50, #52ff4f01)
-
     ,url("./assets/header1.svg");
     position: fixed;
     background-size: cover;
@@ -55,10 +60,7 @@ li {
 }
 
 .bg-navbar {
-    color: #000;
-    /* border-bottom: #000 solid 4px; */
-    box-shadow: 0 5px 4px #000;
-    border-radius: 0 0 45px;
+    
 }
 
 .bg-navbar .btn {
@@ -113,10 +115,17 @@ li {
 
 .btn-cerrar {
     background: #ffe;
+    backdrop-filter: blur(3px);
+    border-radius: 0 0 10px;
+    padding: 3px;
 }
 
 .btn-reservar {
     background: #78f8a9;
+    backdrop-filter: blur(3px);
+    border-radius: 0 0 10px;
+    padding: 3px;
+
 }
 
 .btn:focus,
