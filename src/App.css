@@ -129,6 +129,7 @@ li {
 }
 
 .btn:focus,
+.navbar-toggler:focus,
 .btn-close:focus {
     outline: none !important;
     outline-width: 0 !important;
@@ -198,4 +199,13 @@ li {
         bottom: 50px;
         opacity: 0%;
     }
+}
+.navbar-toggler{
+    border: none;
+    opacity: 100%;
+}
+.navbar-toggler:active{
+    rotate: 15%;
+    transition: 1s;
+    transform: scalex(-13);
 }
