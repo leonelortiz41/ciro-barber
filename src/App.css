@@ -103,7 +103,7 @@ li {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #426d00;
+    background: #78f8e3;
     border: #000 solid 2px;
 }
 
@@ -157,7 +157,7 @@ li {
     width: 55px;
     bottom: 3%;
     right: 2%;
-    filter: drop-shadow(2px 3px 2px #426d00);
+    filter: drop-shadow(2px 3px 2px #78f8e3);
 }
 
 .Services {
