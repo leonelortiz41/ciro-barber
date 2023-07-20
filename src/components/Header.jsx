@@ -16,14 +16,14 @@ function Header() {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul className="navbar-nav d-flex justify-content-center align-center">
-                                <li className="nav-item">
-                                    <a className="btn d-block" href="#">Inicio</a>
+                                <li className="">
+                                    <a className="btn btn-nav d-block" href="#">Inicio</a>
                                 </li>
-                                <li className="nav-item">
-                                    <a className="btn d-block" href="#Services">Servicios</a>
+                                <li className="">
+                                    <a className="btn btn-nav d-block" href="#Services">Servicios</a>
                                 </li>
-                                <li className="nav-item">
-                                    <button type="button" className="btn d-block" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <li className="">
+                                    <button type="button" className="btn btn-nav d-block" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                         Reservar turno
                                     </button>
                                 </li>
