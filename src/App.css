@@ -55,19 +55,19 @@ li {
 .card-1 {
     padding: 3px;
     border: none;
-    border-radius: 0 0 33px;
-    box-shadow: 0 0 6px #000;
+    border-radius:  3px;
+    box-shadow: 3px 6px 9px #000;
 }
 
 
 .navbar-collapse {
-    background: #000000df;
-    backdrop-filter: blur(3px);
+    background: #222;
     border-radius: 30px;
     padding-inline: 5px;
 }
 
 .navbar-collapse .btn-nav {
+    transition: all .6s;
     font-size: 19px;
     color: #fff;
     padding: 3px;
@@ -105,12 +105,13 @@ li {
 }
 
 ::-webkit-scrollbar {
-    background: #111;
+    background: #000;
     width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #78f8e3;
+    background: #fff;
+    border-radius: 0 30px;
     border: #000 solid 2px;
 }
 
@@ -162,11 +163,21 @@ li {
 }
 
 .wp {
+    transition: all .6s;
     position: fixed;
-    width: 55px;
     bottom: 3%;
+    background: #111;
+    border-radius: 50%;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    font-size: 50px;
     right: 2%;
-    filter: drop-shadow(2px 3px 2px #78f8e3);
+}
+.wp:hover {
+    color: #78f8a9;
 }
 
 .Services {

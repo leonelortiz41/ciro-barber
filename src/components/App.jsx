@@ -6,7 +6,8 @@ import corte from '../assets/corte1.jpg'
 import barba from '../assets/barba1.jpg'
 import peinado from '../assets/peinado1.jpg'
 import tintura from '../assets/tintura1.jpg'
-import whatsapp from '../assets/whatsapp.png'
+import { RiWhatsappFill} from 'react-icons/ri';
+
 
 export function Home() {
 
@@ -109,8 +110,8 @@ export function Reservation() {
 export function Contacts() {
 
   return (
-    <a href='https://wa.me/543813867770'>
-      <img src={whatsapp} className='wp'></img>
+    <a href='https://wa.me/543813867770' target='_blank' className='wp'>
+      <RiWhatsappFill/>
     </a>
   )
 }
